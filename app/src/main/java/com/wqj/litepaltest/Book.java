@@ -1,7 +1,9 @@
 package com.wqj.litepaltest;
 
 
-public class Book {
+import org.litepal.crud.DataSupport;
+
+public class Book extends DataSupport {
     private int id;
     private String name;
     private String author;

@@ -1,7 +1,7 @@
 package com.wqj.litepaltest;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
@@ -28,13 +28,18 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Book book = new Book("", "", 16.45, 345, "");
+                Book book = new Book("My First Code Line", "WQJ", 16.45, 345, "人民邮电出版社");
+                book.save();
+
             }
         });
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Book book = new Book("My Second Code Line", "WQJ", 16.45, 345, "人民邮电出版社");
+                book.save();
+                book.setPrice(16.03);
+                book.save();
             }
         });
         btn4.setOnClickListener(new View.OnClickListener() {
